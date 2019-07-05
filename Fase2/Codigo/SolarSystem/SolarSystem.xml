@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<figure>
+  <!-- sol -->
+    <group>
+        <specs angle=7.25 axisZ=1 scale_x=3 scale_y=3 scale_z=3  />
+        <color R=1.0 G=1.0 B=0 />
+        <models>
+            <model file="./SolarSystem/primitiveSphere.3d" />
+        </models>
+    </group>
+
+
+    <!-- orbit mercurio -->
+    <group>
+        <specs angle=7 axisZ=1 X=7.2 />
+        <color R=1.0 G=1.0 B=0.0 />
+        <orbit radiusX=45 radiusZ=44.25 />
+        
+        <!-- mercurio -->
+        <group>
+            <specs X=45 scale_x=0.05 scale_y=0.05 scale_z=0.05 />
+            <color R=0.7 G=0.7 B=0.7 />
+            <models>
+                <model file="./SolarSystem/primitiveSphere.3d" />
+            </models>
+        </group>
+    </group>
+   
+
+    <!-- orbit venus -->
+    <group>
+        <specs angle=10 axisY=1 />
+        
+        <group>
+            <specs X=0.948 angle=3.24 axisZ=1 />
+            <color R=1.0 G=1.0 B=0.0 />
+            <orbit radiusX=55 radiusZ=54.99 />
+            
+            <!-- venus -->
+            <group>
+                <specs X=55 angle=177.36 axisZ=1 scale_x=0.13 scale_y=0.13 scale_z=0.13 />
+                <color R=1 G=0.5 B=0 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+            </group>
+        </group>
+    </group>
+    
+
+    <!-- orbit terra -->
+    <group>
+        <specs angle=20 axisY=1 />
+        
+        <group>
+            <specs X=0.999 />
+            <color R=0.3 G=0.3 B=1 />
+            <orbit radiusX=60 radiusZ=59.99 />
+        
+            <!-- terra -->
+            <group>
+                <specs X=60 angle=23.45 axisZ=1 scale_x=0.137 scale_y=0.137 scale_z=0.137 />
+                <color R=0.3 G=0.3 B=1 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+                
+                    <!-- orbit lua -->
+                    <group>
+                        <specs X=0.199 angle=5.14 axisZ=1 />
+                        <color R=0.7 G=0.7 B=0.7 />
+                        <orbit radiusX=10 radiusZ=10 />
+                        
+                        <!-- lua -->
+                        <group>
+                            <specs X=10 angle=6.68 axisZ=1 scale_x=0.37 scale_y=0.37 scale_z=0.37 />
+                            <color R=0.7 G=0.7 B=0.7 />
+                            <models>
+                                <model file="./SolarSystem/primitiveSphere.3d" />
+                            </models>
+                        </group>
+                    </group>
+            </group>
+        </group>
+    </group>
+
+<!-- orbit marte -->
+    <group>
+        <specs angle=30 axisY=1 />
+        
+        <group>
+            <specs X=5.58 angle=1.51 axisZ=1 />
+	    <color R=1.0 G=1.0 B=0.0 />
+
+            <orbit radiusX=70 radiusZ=69.74 />
+            
+            <!-- marte -->
+            <group>
+                <specs X=70 angle=25.19 axisZ=1 scale_x=0.073 scale_y=0.073 scale_z=0.073 />
+                <color R=1 G=0 B=0 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+            </group>
+        </group>
+    </group>
+
+ <!-- orbit jupiter -->
+    <group>
+        <specs angle=40 axisY=1 />
+        
+        <group>
+            <specs X=4.9 angle=1.18 axisZ=1 />
+            <color R=1.0 G=1.0 B=0.0 />
+            <orbit radiusX=110 radiusZ=100.88 />
+            
+            <!-- jupiter -->
+            <group>
+                <specs X=110 angle=3.13 axisZ=1 scale_x=1.54 scale_y=1.54 scale_z=1.54 />
+                <color R=0.46 G=0.63 B=0.46 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+                <!-- orbit europa -->
+                    <group>
+                        <specs X=0.199 angle=5.14 axisZ=1 />
+                        <color R=0.0 G=0.0 B=1.0 />
+                        <orbit radiusX=9 radiusZ=9 />
+                        
+                        <!-- europa -->
+                        <group>
+                            <specs X=9 angle=6.68 axisZ=1 scale_x=0.04 scale_y=0.04 scale_z=0.04 />
+                            <color R=1.0 G=0.0 B=0.0 />
+                            <models>
+                                <model file="./SolarSystem/primitiveSphere.3d" />
+                            </models>
+                        </group>
+                    </group>
+		            <!-- orbit io -->
+                 <group>
+                       <specs X=0.199 angle=20 axisZ=1 />
+                       <color R=1.0 G=0.0 B=0.0 />
+                       <orbit radiusX=5 radiusZ=5.5 />
+
+                       <!-- io esta- pretinho -->
+                       <group>
+                           <specs X=5 angle=7 axisZ=1 scale_x=0.03 scale_y=0.03 scale_z=0.03 />
+                           <color R=0.3 G=0.3 B=0.3 />
+                           <models>
+                               <model file="./SolarSystem/primitiveSphere.3d" />
+                           </models>
+                       </group>
+                   </group>
+		            <!-- orbit Ganimedes -->
+                 <group>
+                       <specs X=0.199 angle=45 axisZ=1 />
+                       <color R=0.0 G=1.0 B=0.3 />
+                       <orbit radiusX=7 radiusZ=7 />
+
+                       <!-- ganimedes esta - verde alface -->
+                       <group>
+                           <specs X=7 angle=35  axisZ=1 scale_x=0.06 scale_y=0.06 scale_z=0.06 />
+                           <color R=0.0 G=0.0 B=1.0 />
+                           <models>
+                               <model file="./SolarSystem/primitiveSphere.3d" />
+                           </models>
+                       </group>
+                 </group>
+	                <!-- orbit Calisto -->
+                 <group>
+                       <specs X=1.0 angle=20 axisZ=1 />
+                       <color R=1.0 G=1.0 B=0.0 />
+                       <orbit radiusX=9 radiusZ=9 />
+
+                       <!-- Calisto -->
+                       <group>
+                           <specs X=9 angle=30 axisZ=1 scale_x=0.04 scale_y=0.04 scale_z=0.04 />
+                           <color R=1.0 G=0.7 B=0.7 />
+                           <models>
+                               <model file="./SolarSystem/primitiveSphere.3d" />
+                           </models>
+                       </group>
+                   </group>
+
+
+
+            </group>
+        </group>
+    </group>
+
+    <!-- orbit saturno -->
+    <group>
+        <specs angle=50 axisY=1 />
+        
+        <group>
+            <specs X=7.48 angle=2.29 axisZ=1 />
+            <color R=1.0 G=1.0 B=0.0 />
+            <orbit radiusX=150 radiusZ=149.8 />
+
+
+            
+            <!-- saturno -->
+            <group>
+                <specs X=150 angle=26.73 axisZ=1 scale_x=1.29 scale_y=1.29 scale_z=1.29 />
+                <color R=0.55 G=0.27 B=0.08 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+
+               
+            </group>
+        </group>
+    </group>
+
+     <!-- orbit urano -->
+    <group>
+        <specs angle=60 axisY=1 />
+    
+        <group>
+            <specs X=8.24 angle=0.46 axisZ=1 />
+            <color R=1.0 G=1.0 B=0.0 />
+            <orbit radiusX=180 radiusZ=174.8 />
+            
+            <!-- urano -->
+            <group>
+                <specs X=180 angle=97.77 axisZ=1 scale_x=0.56 scale_y=0.56 scale_z=0.56 />
+                <color R=0.6 G=0.6 B=1 />
+                <models>
+                    <model file="./SolarSystem/primitiveSphere.3d" />
+                </models>
+
+            </group>
+       </group>
+   </group>
+    
+   <!-- orbit neptuno -->
+   <group>
+       <specs angle=70 axisY=1 />
+       
+       <group>
+           <specs X=1.95 angle=1.46 axisZ=1 />
+           <color R=1.0 G=1.0 B=0.0 />
+           <orbit radiusX=200 radiusZ=199.99 />
+           
+           <!-- neptuno -->
+           <group>
+               <specs X=200 angle=28.32 axisZ=1 scale_x=0.53 scale_y=0.53 scale_z=0.53 />
+               <color R=0.4 G=0.4 B=1 />
+               <models>
+                   <model file="./SolarSystem/primitiveSphere.3d" />
+               </models>
+           </group>
+       </group>
+   </group>
+   
+</figure>

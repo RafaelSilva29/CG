@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<scene>
+    <lights>
+        <light type=1 posX=0 posY=0 posZ=0 ambR=0.8 ambG=0.8 ambB=0.8 difR=0.5 difG=0.5 difB=0.5/>
+    </lights>
+
+    <!-- sol -->
+    <group>
+        <rotation angle=7.25 axisZ=1 />
+        <scale angle=7.25 axisZ=1 />
+        <group>
+            <rotation time=126.9 axisY=1 />
+            <scale X=21.9 Y=21.9 Z=21.9 />
+            <models>
+                <model file="./SolarSystem/Figures/sun.3d" emiR=1 emiG=1 emiB=1 texture="./SolarSystem/Surfaces/sun.jpg"/>
+            </models>
+        </group>
+    </group>
+
+    <!-- orbita mercurio -->
+    <group>
+        <rotation angle=7 axisZ=1 />
+        <translation X=7.2 />
+        <color R=1 G=1 B=0.8 />
+        <orbit radiusX=35 radiusZ=34.25 nControl=16 />
+        
+        <!-- mercurio -->
+        <group>
+            <translation time=10.8797 >
+                <point X=35.000000 Z=0.000000 />
+                <point X=32.335785 Z=13.106908 />
+                <point X=24.748737 Z=24.218409 />
+                <point X=13.393920 Z=31.642874 />
+                <point X=-0.000002 Z=34.250000 />
+                <point X=-13.393923 Z=31.642874 />
+                <point X=-24.748737 Z=24.218407 />
+                <point X=-32.335785 Z=13.106902 />
+                <point X=-35.000000 Z=-0.000003 />
+                <point X=-32.335785 Z=-13.106908 />
+                <point X=-24.748734 Z=-24.218410 />
+                <point X=-13.393909 Z=-31.642878 />
+                <point X=0.000000 Z=-34.250000 />
+                <point X=13.393926 Z=-31.642872 />
+                <point X=24.748745 Z=-24.218399 />
+                <point X=32.335785 Z=-13.106907 />
+            </translation>
+            <rotation time=0.785 axisY=1 />
+            <scale X=0.383 Y=0.383 Z=0.383 />
+            <models>
+                <model file="./SolarSystem/Figures/mercury.3d" ambR=0.7 ambG=0.7 ambB=0.7 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/mercury.jpg" />
+            </models>
+        </group>
+    </group>
+
+    <!-- orbita venus -->
+    <group>
+        <translation X=0.948 />
+        <rotation angle=3.24 axisZ=1 />
+        <color R=0 G=0.5 B=0 />
+        <orbit radiusX=45 radiusZ=44.99 nControl=16 />
+            
+            <!-- venus -->
+            <group>
+            <translation time=20.47 >
+                <point X=45.000000 Z=0.000000 />
+                <point X=41.574577 Z=17.216928 />
+                <point X=31.819805 Z=31.812737 />
+                <point X=17.220755 Z=41.565342 />
+                <point X=-0.000002 Z=44.990002 />
+                <point X=-17.220758 Z=41.565342 />
+                <point X=-31.819805 Z=31.812735 />
+                <point X=-41.574581 Z=17.216921 />
+                <point X=-45.000000 Z=-0.000004 />
+                <point X=-41.574577 Z=-17.216928 />
+                <point X=-31.819799 Z=-31.812740 />
+                <point X=-17.220741 Z=-41.565346 />
+                <point X=0.000001 Z=-44.990002 />
+                <point X=17.220762 Z=-41.565338 />
+                <point X=31.819817 Z=-31.812725 />
+                <point X=41.574577 Z=-17.216928 />
+            </translation>
+                <rotation angle=177.36 axisZ=1 />
+                <group>
+                    <rotation time=2.4301 axisY=1 />
+                    <scale X=0.95 Y=0.95 Z=0.95 />
+                    <models>
+                        <model file="./SolarSystem/Figures/venus.3d" ambR=1 ambG=0.5 ambB=0 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/venus.jpg"  />
+                    </models>
+            </group>
+        </group>
+    </group>
+
+    <!-- orbita terra -->    
+    <group>
+        <translation X=0.999 />
+        <color R=0.3 G=0.3 B=1 />
+        <orbit radiusX=50 radiusZ=49.99 nControl=16/>
+    
+        <!-- terra -->
+        <group>
+            <translation time=30.65 >
+                <point X=50.000000 Z=0.000000 />
+                <point X=46.193977 Z=19.130346 />
+                <point X=35.355339 Z=35.348270 />
+                <point X=19.134171 Z=46.184738 />
+                <point X=-0.000002 Z=49.990002 />
+                <point X=-19.134176 Z=46.184738 />
+                <point X=-35.355339 Z=35.348270 />
+                <point X=-46.193981 Z=19.130339 />
+                <point X=-50.000000 Z=-0.000004 />
+                <point X=-46.193977 Z=-19.130346 />
+                <point X=-35.355331 Z=-35.348274 />
+                <point X=-19.134157 Z=-46.184746 />
+                <point X=0.000001 Z=-49.990002 />
+                <point X=19.134180 Z=-46.184734 />
+                <point X=35.355350 Z=-35.348259 />
+                <point X=46.193977 Z=-19.130344 />
+            </translation>
+            <rotation angle=23.45 axisZ=1 />
+            <group>
+                <rotation time=10 axisY=1 />
+                <models>
+                    <model file="./SolarSystem/Figures/earth.3d" ambR=0.3 ambG=0.3 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/earth.jpg"/>
+                </models>
+            </group>
+
+                <!-- orbita lua -->
+                <group>
+                    <translation X=0.199 />
+                    <rotation angle=5.14 axisZ=1 />
+                    <color R=0.7 G=0.7 B=0.7 />
+                    <orbit radiusX=2 radiusZ=1.99 nControl=16/>
+                    
+                    <!-- lua -->
+                    <group>
+                        <translation time=30 >
+                            <point X=2.000000 Z=0.000000 />
+                            <point X=1.847759 Z=0.761540 />
+                            <point X=1.414214 Z=1.407143 />
+                            <point X=0.765367 Z=1.838520 />
+                            <point X=-0.000000 Z=1.990000 />
+                            <point X=-0.765367 Z=1.838520 />
+                            <point X=-1.414214 Z=1.407143 />
+                            <point X=-1.847759 Z=0.761540 />
+                            <point X=-2.000000 Z=-0.000000 />
+                            <point X=-1.847759 Z=-0.761540 />
+                            <point X=-1.414213 Z=-1.407143 />
+                            <point X=-0.765366 Z=-1.838521 />
+                            <point X=0.000000 Z=-1.990000 />
+                            <point X=0.765367 Z=-1.838520 />
+                            <point X=1.414214 Z=-1.407142 />
+                            <point X=1.847759 Z=-0.761540 />
+                        </translation>
+                        <rotation angle=6.68 axisZ=1 />
+                        <group>
+                            <rotation time=10 axisY=1 />
+                            <scale X=0.273 Y=0.273 Z=0.273 />
+                            <models>
+                                <model file="./SolarSystem/Figures/moon.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/moon.jpg"/>
+                            </models>
+                        </group>
+                    </group>
+                </group>
+        </group>
+    </group>
+
+     <!-- orbita marte -->
+    <group>
+        <translation X=5.58 />
+        <rotation angle=1.51 axisZ=1 />
+        <color R=1 G=0.5 B=0 />
+        <orbit radiusX=60 radiusZ=59.74 nControl=16/>
+        
+        <!-- marte -->
+        <group>
+            <translation time=40 >
+                <point X=60.000000 Z=0.000000 />
+                <point X=55.432774 Z=22.861509 />
+                <point X=42.426407 Z=42.242561 />
+                <point X=22.961006 Z=55.192566 />
+                <point X=-0.000003 Z=59.740002 />
+                <point X=-22.961010 Z=55.192562 />
+                <point X=-42.426407 Z=42.242561 />
+                <point X=-55.432777 Z=22.861500 />
+                <point X=-60.000000 Z=-0.000005 />
+                <point X=-55.432774 Z=-22.861509 />
+                <point X=-42.426399 Z=-42.242569 />
+                <point X=-22.960987 Z=-55.192574 />
+                <point X=0.000001 Z=-59.740002 />
+                <point X=22.961016 Z=-55.192562 />
+                <point X=42.426422 Z=-42.242546 />
+                <point X=55.432774 Z=-22.861507 />
+            </translation>
+            <rotation angle=25.19 axisZ=1 />
+            <group>
+                <rotation time=10 axisY=1 />
+                <scale X=0.532 Y=0.532 Z=0.532 />
+                <models>
+                    <model file="./SolarSystem/Figures/mars.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/mars.jpg"/>
+                </models>
+            </group>
+        </group>
+    </group>
+
+    <!-- orbita cometa -->
+    <group>
+        <rotation angle=170 axisY=1 />
+        <group>
+            <translation X=60.72 />
+            <rotation angle=168.24 axisY=1 />
+            <color R=1 G=0.3 B=0.3 />
+            <orbit radiusX=90 radiusZ=50.41 nControl=16/>
+        
+            <!-- teapot -->
+            <group>
+                <translation time=70 >
+                    <point X=90.500000 Z=0.000000 />
+                    <point X=80.333333 Z=18.291072/>
+                    <point X=60.230769 Z=34.645252 />
+                    <point X=38.727666 Z=45.572861 />
+                    <point X=-0.000007 Z=52.410000 />
+                    <point X=-47.727666 Z=45.572861 />
+                    <point X=-68.230769 Z=34.645252 />
+                    <point X=-86.333333 Z=18.291072 />
+                    <point X=-91.000004 Z=0.000009 />
+                    <point X=-84.333333 Z=-19.291072 />
+                    <point X=-61.230769 Z=-36.645252 />
+                    <point X=-28.727666 Z=-46.572861 />
+                    <point X=-0.000004 Z=-52.410004 />
+                    <point X=45.727666 Z=-45.572861 />
+                    <point X=65.230769 Z=-34.645252 />
+                    <point X=82.333333 Z=-18.291072 />
+                </translation>
+                <group>
+                    <translation X=1.5 />
+                    <rotation time=10 axisY=1 />
+                    <models>
+                        <model file="./SolarSystem/Figures/teapot.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/rock.jpg"/>
+                    </models>
+                </group>
+            </group>
+        </group>
+    </group>
+
+    <!-- orbita jupiter -->
+    <group>
+        <translation X=4.9 />
+        <rotation angle=1.18 axisZ=1 />
+        <color R=0 G=0.5 B=0.5 />
+        <orbit radiusX=100 radiusZ=99.88 nControl=16 />
+        
+        <!-- jupiter -->
+        <group>
+            <translation time=53 >
+                <point X=100.000000 Z=0.000000 />
+                <point X=92.387955 Z=38.222420 />
+                <point X=70.710678 Z=70.625824 />
+                <point X=38.268341 Z=92.277084 />
+                <point X=-0.000004 Z=99.879997 />
+                <point X=-38.268353 Z=92.277084 />
+                <point X=-70.710678 Z=70.625824 />
+                <point X=-92.387962 Z=38.222404 />
+                <point X=-100.000000 Z=-0.000009 />
+                <point X=-92.387955 Z=-38.222420 />
+                <point X=-70.710663 Z=-70.625832 />
+                <point X=-38.268314 Z=-92.277100 />
+                <point X=0.000001 Z=-99.879997 />
+                <point X=38.268360 Z=-92.277077 />
+                <point X=70.710701 Z=-70.625801 />
+                <point X=92.387955 Z=-38.222420 />
+            </translation>
+            <group>
+                <rotation time=41 axisY=1 />
+                <scale X=11.21 Y=11.21 Z=11.21 />
+                <models>
+                    <model file="./SolarSystem/Figures/jupiter.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/jupiter.jpg" />
+                </models>
+            
+                <!-- orbita europa -->
+                <group>
+                    <translation X=0.199 />
+                    <rotation angle=5.14 axisZ=1 />
+                    <color R=0.7 G=0.7 B=0.7 />
+                    <orbit radiusX=1.5 radiusZ=1.49 nControl=16/>
+                    
+                    <!-- europa -->
+                    <group>
+                        <translation time=14 >
+                            <point X=1.500000 Z=0.000000 />
+                            <point X=1.388888 Z=0.570203 />
+                            <point X=1.153846 Z=1.053589 />
+                            <point X=0.812127 Z=1.376697/>
+                            <point X=-0.000000 Z=1.490000 />
+                            <point X=-0.812127 Z=1.376697 />
+                            <point X=-1.153846 Z=1.053589 />
+                            <point X=-1.388888 Z=0.570203 />
+                            <point X=-1.500000 Z=-0.000000 />
+                            <point X=-1.388888 Z=-0.570203 />
+                            <point X=-1.153846 Z=-1.053589 />
+                            <point X=-0.812127 Z=-1.376697 />
+                            <point X=0.000000 Z=-1.490000 />
+                            <point X=0.812127 Z=-1.376697 />
+                            <point X=1.153846 Z=-1.053589 />
+                            <point X=1.388888 Z=-0.570203 />
+                        </translation>
+                        <rotation angle=6.68 axisZ=1 />
+                        <group>
+                            <rotation time=200 axisY=1 />
+                            <scale X=0.145 Y=0.145 Z=0.145 />
+                            <models>
+                                <model file="./SolarSystem/Figures/europe.3d" ambR=0.7 ambG=0.7 ambB=0.7 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/europe.jpg" />
+                            </models>
+                        </group>
+                    </group>
+                </group>
+            </group>
+        </group>
+    </group> 
+
+    <!-- orbita saturno -->
+    <group>
+        <translation X=7.48 />
+        <rotation angle=2.29 axisZ=1 />
+        <color R=0.5 G=0.5 B=0.1 />
+        <orbit radiusX=140 radiusZ=139.8 nControl=16 />
+        
+        <!-- saturno -->
+        <group>
+            <translation time=107 >
+                <point X=140.000000 Z=0.000000 />
+                <point X=129.343140 Z=53.499146 />
+                <point X=98.994949 Z=98.853531 />
+                <point X=53.575680 Z=129.158356 />
+                <point X=-0.000006 Z=139.800003 />
+                <point X=-53.575691 Z=129.158356 />
+                <point X=-98.994949 Z=98.853531 />
+                <point X=-129.343140 Z=53.499123 />
+                <point X=-140.000000 Z=-0.000012 />
+                <point X=-129.343140 Z=-53.499146 />
+                <point X=-98.994934 Z=-98.853546 />
+                <point X=-53.575638 Z=-129.158386 />
+                <point X=0.000002 Z=-139.800003 />
+                <point X=53.575703 Z=-129.158356 />
+                <point X=98.994980 Z=-98.853500 />
+                <point X=129.343140 Z=-53.499142 />
+            </translation>
+            <rotation angle=26.73 axisZ=1 />
+            <group>
+                <rotation time=35 axisY=1 />
+                <scale X=9.45 Y=9.45 Z=9.45 />
+                <models>
+                    <model file="./SolarSystem/Figures/saturn.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/saturn.jpg" />
+                </models>
+
+                <!-- anel saturno -->
+                <group>
+                    <!-- <translation X=0.199 />-->
+                    <rotation angle=5.14 axisZ=1 />
+                    <color R=0.7 G=0.7 B=0.7 />
+                    <orbit radiusX=1.5 radiusZ=1.49 nControl=16 />
+                </group>
+                <group>
+                    <!--<translation X=0.199 />-->
+                    <rotation angle=5.14 axisZ=1 /> 
+                    <color R=1 G=0.8 B=0.6 />
+                    <orbit radiusX=1.6 radiusZ=1.59 nControl=16 />
+                </group>
+        
+            </group>
+        </group>
+    </group>
+
+    <!-- orbita urano -->
+    <group>
+        <translation X=8.24 />
+        <rotation angle=0.46 axisZ=1 />
+        <color R=1 G=0 B=1 />
+        <orbit radiusX=170 radiusZ=164.8 nControl=16/>
+        
+        <!-- urano -->
+        <group>
+            <translation time=306.4 >
+                <point X=170.000000 Z=0.000000 />
+                <point X=157.059525 Z=63.066231 />
+                <point X=120.208153 Z=116.531204 />
+                <point X=65.056183 Z=152.255356 />
+                <point X=-0.000007 Z=164.800003 />
+                <point X=-65.056198 Z=152.255341 />
+                <point X=-120.208153 Z=116.531197 />
+                <point X=-157.059525 Z=63.066204 />
+                <point X=-170.000000 Z=-0.000014 />
+                <point X=-157.059525 Z=-63.066231 />
+                <point X=-120.208130 Z=-116.531219 />
+                <point X=-65.056129 Z=-152.255371 />
+                <point X=0.000002 Z=-164.800003 />
+                <point X=65.056213 Z=-152.255341 />
+                <point X=120.208191 Z=-116.531158 />
+                <point X=157.059525 Z=-63.066227 />
+            </translation>
+            <rotation angle=97.77 axisZ=1 />
+            <group>
+                <rotation time=38 axisY=1 />
+                <scale X=4.01 Y=4.01 Z=4.01 />
+                <models>
+                    <model file="./SolarSystem/Figures/uranus.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/uranus.jpg" />
+                </models>
+            </group>
+        </group>
+    </group>
+
+
+    <!-- orbita neptuno -->
+    <group>
+        <translation X=1.95 />
+        <rotation angle=1.46 axisZ=1 />
+        <color R=0 G=0.5 B=0.8 />
+        <orbit radiusX=190 radiusZ=189.99 nControl=16/>
+       
+       <!-- neptuno -->
+       <group>
+           <translation time=622.5 >
+                <point X=190.000000 Z=0.000000 />
+                <point X=175.537109 Z=72.706032 />
+                <point X=134.350281 Z=134.343231 />
+                <point X=72.709854 Z=175.527878 />
+                <point X=-0.000008 Z=189.990005 />
+                <point X=-72.709869 Z=175.527878 />
+                <point X=-134.350296 Z=134.343216 />
+                <point X=-175.537125 Z=72.706001 />
+                <point X=-190.000000 Z=-0.000017 />
+                <point X=-175.537109 Z=-72.706032 />
+                <point X=-134.350266 Z=-134.343246 />
+                <point X=-72.709793 Z=-175.527908 />
+                <point X=0.000002 Z=-189.990005 />
+                <point X=72.709885 Z=-175.527863 />
+                <point X=134.350327 Z=-134.343170 />
+                <point X=175.537109 Z=-72.706024 />
+           </translation>
+           <rotation angle=28.32 axisZ=1 />
+           <group>
+                <rotation time=34 axisY=1 />
+                <scale X=3.87 Y=3.87 Z=3.87 />
+                <models>
+                    <model file="./SolarSystem/Figures/neptune.3d" ambR=1 ambG=1 ambB=1 diffR=1 diffG=1 diffB=1 texture="./SolarSystem/Surfaces/neptune.jpg"/>
+                </models>
+            </group>
+        </group>
+    </group>
+</scene>
+
+
+
+
+
+
+
