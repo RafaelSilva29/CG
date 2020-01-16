@@ -1,9 +1,9 @@
 # CG
 
-Computação Gráfica - MIEINF
+## Computação Gráfica - MIEINF
 
 Trabalho Prático da Unidade Curricular Computação Gráfica
 
-Mestrado Integrado em Engenharia Informática
+### Mestrado Integrado em Engenharia Informática
 
-Universidade do Minho
+#### Universidade do Minho
